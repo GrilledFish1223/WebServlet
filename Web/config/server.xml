@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server>
+	<service>
+		<connector protocol="HTTP/1.1" port="8080" maxThread="100" />
+		<webroot>webapps</webroot>
+		<not-found-page>notfound.html</not-found-page>	
+	</service>
+	
+	<!-- 不同媒体类型对应的Content-Type值 -->
+	<type-mappings>
+		<type-mapping ext="html" type="text/html" />
+		<type-mapping ext="png" type="image/png" />
+		<type-mapping ext="xml" type="text/xml" />
+		<type-mapping ext="jpeg" type="image/jpeg" />
+		<type-mapping ext="gif" type="image/gif" />
+		<type-mapping ext="ico" type="image/ico" />
+	</type-mappings>
+</server>
+
+
+
+
+
